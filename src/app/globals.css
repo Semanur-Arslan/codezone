@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #121212;
+  --secondary: #F0E74D;
+  --black-950: #1E1E1E; 
+  --black-900: #2A2A2A;
+  --black-800: #323232;
+  --black-700: #3B3B3B;
+  --black-500: #5C5C5C;
+  --white: #FFFFFF;
+  --purple: #864CF6;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--primary);
+  --color-foreground: var(--secondary);
+  --font-saira: 'Saira', sans-serif;
+  --font-sairaCondensed: 'Saira Condensed', sans-serif;
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-black-950: var(--black-950);
+  --color-black-900: var(--black-900);
+  --color-black-800: var(--black-800);
+  --color-black-700: var(--black-700);
+  --color-black-500: var(--black-500);
+  --color-white: var(--white);
+  --color-purple: var(--purple);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+body {
+  background: var(--primary);
+  color: var(--secondary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-sairaCondensed {
+  font-family: 'Saira Condensed', sans-serif;
+}
+
+.swiper-pagination-bullet {
+  background: var(--secondary) !important;
+  opacity: 1  !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--black-950) !important;
+  opacity: 1  !important;
+    width:8px !important;
+  height:8px !important;
+}
+
+.swiper-pagination {
+  left: 10rem !important;
+  bottom: 5rem !important;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination {
+    display: block;
+    left: 10rem !important;
+    bottom: 5rem !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+
+
+
