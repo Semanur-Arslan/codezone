@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="container flex flex-col md:gap-24 gap-8">
+    <footer className="container font-saira flex flex-col md:gap-24 gap-8">
       <div className="flex flex-col gap-12">
       <div className="border-b border-black-700 py-3">
         <form className="flex gap-2">
@@ -23,8 +23,6 @@ export default function Footer() {
           </button>
         </form>
       </div>
-
-      {/* Socials */}
       <div className="flex gap-2">
         {SOCIAL_LINKS.map(({ name, icon, href }) => (
           <a
@@ -52,8 +50,6 @@ export default function Footer() {
           </a>
         ))}
       </div>
-
-   {/* Copyright */}
       <div className="text-black-500 text-sm mt-8">
         © RAPKOLOGY All Rights Are Reserved 2022.
       </div>

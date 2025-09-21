@@ -3,10 +3,10 @@ import React, { useEffect, useRef, useState } from "react";
 import PreviewPost from "../PreviewPost";
 import { ColumnVariant, PreviewVariant, TrendItem } from "@/types/types";
 import { faCompass } from "@fortawesome/free-regular-svg-icons";
-import Categories from "./Tags";
 import Footer from "../Footer";
 import { useTags } from "@/context/TagsContext";
 import { Header } from "../Header";
+import Tags from "./Tags";
 
 export default function Discovery({ items }: { items: TrendItem[] }) {
     const { selected: selectedTags } = useTags();
@@ -50,7 +50,7 @@ export default function Discovery({ items }: { items: TrendItem[] }) {
     }, [items.length]);
 
     return (
-        <section className="grid md:grid-cols-2 gap-24 py-16 px-6 my-16 ">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-24 py-16 px-6 my-16 w-full">
             <div className="text-white">
 
                 <Header
@@ -61,27 +61,27 @@ export default function Discovery({ items }: { items: TrendItem[] }) {
                     onViewToggle={(v) => setView(v)}
                     onSearch={(query) => setSearchQuery(query)}
                 />
-                <div className="block md:hidden w-screen mb-8">
+                <div className="block md:hidden w-full mb-8">
                     <Header
                         title="NELER GÖRMEK İSTERSİN?"
                         titleTextSize="text-2xl"
                         containerClass="mb-4 justify-start"
                     />
-                    <Categories />
+                    <Tags />
                 </div>
                 <div ref={scrollRef}
-                    className={`grid order-3 md:order-3 ${view === ColumnVariant.SINGLE ? "md:grid-cols-1" : "md:grid-cols-2"} gap-12 max-h-[500px] overflow-y-auto px-4 scrollbar-none`} >
+                    className={`grid order-3 md:order-3 ${view === ColumnVariant.SINGLE ? "md:grid-cols-1" : "md:grid-cols-2"} gap-12 md:max-h-[500px]  max-h-[900px] overflow-y-auto px-4 scrollbar-none`} >
                     <PreviewPost displayedItems={displayedItems} variant={PreviewVariant.IMAGE_LEFT} />
                 </div>
             </div>
-            <div className="flex flex-col gap-24 px-8">
+            <div className="flex flex-col gap-24 md:px-8 px-2">
                 <div className="hidden md:block">
                     <Header
                         title="NELER GÖRMEK İSTERSİN?"
                         titleTextSize="text-2xl"
                         containerClass="mb-4 justify-start"
                     />
-                    <Categories />
+                    <Tags />
                 </div>
                 <div>
                     <Header

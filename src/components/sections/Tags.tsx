@@ -15,7 +15,7 @@ export default function Tags() {
         <button
           key={cat}
           onClick={() => toggleTag(cat)}
-          className={`inline-block px-4 py-2 text-sm font-md transition ${
+          className={`inline-block px-4 py-2 text-sm font-md font-saira transition ${
             selected.includes(cat)
               ? "bg-secondary text-primary border border-secondary"
               : "text-white hover:bg-secondary hover:text-primary border border-white hover:border-secondary"

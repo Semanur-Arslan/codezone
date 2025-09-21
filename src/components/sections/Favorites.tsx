@@ -35,7 +35,7 @@ export default function Favorites() {
       </div>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-6 items-start">
         <div className="md:col-span-1 h-full flex items-center justify-center md:justify-start py-12">
-          <h2 className="text-6xl font-extrabold md:w-50 w-100 md:ml-12 text-center md:text-start">
+          <h2 className="text-6xl font-sairaCondensed font-extrabold md:w-50 w-100 md:ml-12 text-center md:text-start">
             Ayın Favorileri
           </h2>
         </div>
@@ -77,9 +77,9 @@ export default function Favorites() {
                     </div>
                     <div className="flex flex-col justify-center items-center md:w-1/2 w-full h-50 gap-2">
                       <div className="bg-black-800 rounded-lg p-1">
-                        <h3 className="text-xs text-white">{item.title} <span className="font-bold">({item.number})</span></h3>
+                        <h3 className="font-saira text-xs text-white">{item.title} <span className="font-bold">({item.number})</span></h3>
                       </div>
-                      <div>
+                      <div className="font-saira">
                         <h5 className="font-thin">{item.artist}</h5>
                         <h5 className="font-bold">{item.song}</h5>
                       </div>
