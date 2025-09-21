@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Saira } from "next/font/google";
 import { Saira_Condensed } from "next/font/google";
 import "./globals.css";
-import "@/lib/icons";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { TagsProvider } from "@/context/TagsContext";
 
 const saira = Saira({

@@ -20,9 +20,9 @@ export default function Slider() {
         spaceBetween={0}
         slidesPerView={1}
         pagination={{
-    clickable: true,
-    el: ".custom-pagination"
-  }}
+          clickable: true,
+          el: ".custom-pagination"
+        }}
         navigation={{
           prevEl: ".custom-prev",
           nextEl: ".custom-next",
@@ -44,10 +44,10 @@ export default function Slider() {
               </div>
               <div className="absolute inset-y-0 right-0 w-full md:w-1/2 flex md:items-center mt-36 px-6 md:px-12">
                 <div className=" md:max-w-lg max-w-sm flex flex-col gap-4 px-4 md:text-start text-center">
-                  <h2 className={`text-[36px] md:text-[60px] font-bold leading-[110%] tracking-[-0.02em]  text-${slide.textColor}  font-sairaCondensed`}>
+                  <h2 className={`text-[36px] md:text-[60px] font-bold leading-[110%] tracking-[-0.02em]  slide-description ${slide.textColor?.mobile} md-${slide.textColor?.md} font-sairaCondensed`} >
                     {slide.title}
                   </h2>
-                  <p className={`text-sm md:text-base font-normal leading-[120%] tracking-[0.015em]  text-${slide.textColor} `}>{slide.description}</p>
+                  <p className={`text-sm md:text-base font-normal leading-[120%] tracking-[0.015em] slide-description font-saira  ${slide.textColor?.mobile} md-${slide.textColor?.md}`}>{slide.description}</p>
                   {slide.buttonLink && (
                     <div className="mt-4">
                       <AsymmetricButton
@@ -62,12 +62,12 @@ export default function Slider() {
             </div>
           </SwiperSlide>
         ))}
-<div className="custom-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer hidden md:flex">
-  <FontAwesomeIcon icon={faArrowLeft} size="lg" className="text-white" />
-</div>
-<div className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer hidden md:flex">
-  <FontAwesomeIcon icon={faArrowRight} size="lg" className="text-white" />
-</div>
+        <div className="custom-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer hidden md:flex">
+          <FontAwesomeIcon icon={faArrowLeft} size="lg" className="text-white" />
+        </div>
+        <div className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer hidden md:flex">
+          <FontAwesomeIcon icon={faArrowRight} size="lg" className="text-white" />
+        </div>
       </Swiper>
       <div className="absolute bottom-0 left-0 w-full h-30 overflow-hidden pointer-events-none z-2">
         <Image

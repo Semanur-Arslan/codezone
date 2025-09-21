@@ -36,6 +36,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.font-saira {
+  font-family: 'Saira', sans-serif;
+}
+
 .font-sairaCondensed {
   font-family: 'Saira Condensed', sans-serif;
 }
@@ -78,6 +82,23 @@ body {
     bottom: 5rem !important;
   }
 }
+
+.slide-description.white {
+  color: white;
+}
+.slide-description.primary {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .slide-description.md-white {
+   color: white;
+  }
+  .slide-description.md-primary {
+     color: black;
+  }
+}
+
 
 
 

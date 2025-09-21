@@ -24,7 +24,7 @@ export default function Promotion() {
       <div className="relative h-full w-full container mx-auto mt-24 md:mt-0 text-white z-10">
         <div className="md:h-full h-1/2 text-center md:text-left p-6 relative z-10">
           <div className="transform -rotate-3 justify-center items-center flex flex-col h-full ">
-            <div className="flex items-center justify-center  gap-4 mb-4">
+            <div className="flex items-center justify-center md:gap-4 gap-2 mb-4 ">
               <Image
                 src="/twitch.svg"
                 alt="Twitch"
@@ -34,10 +34,10 @@ export default function Promotion() {
               />
               <div className="w-px h-20 bg-gray-400"></div>
               <div>
-                <h2 className="text-4xl font-bold">
+                <h2 className="md:text-4xl text-2xl font-bold font-sairaCondensed">
                   HER HAFTA <span className="text-secondary block">CANLIDAYIZ!</span>
                 </h2>
-                <p className="mt-2 text-lg">Bizi Takip Edin!</p>
+                <p className="mt-2 text-lg font-saira">Bizi Takip Edin!</p>
               </div>
             </div>
             <div className="mt-6 flex gap-4 justify-center border border-white/20 p-4 rounded-xl w-fit">

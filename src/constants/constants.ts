@@ -9,7 +9,10 @@ export const SLIDER_IMAGES: SliderItem[] = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ",
     buttonText: "Devamını Oku",
     buttonLink: "/",
-    textColor: "white"
+     textColor: {
+      mobile: "white",
+      md: "white"
+    }
   },
   {
     src: "/slider/slider_2.png",
@@ -19,17 +22,20 @@ export const SLIDER_IMAGES: SliderItem[] = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ",
     buttonText: "Devamını Oku",
     buttonLink: "/",
-    textColor: "black"
+       textColor: {
+      mobile: "white",
+      md: "primary"
+    }
   },
 
 ];
 
 export const MENU_ITEMS: MenuItem[] = [
-  { name: "Haberler", href: "/blog" },
-  { name: "Etkinlikler", href: "/blog" },
-  { name: "Müzikler", href: "/blog" },
-  { name: "Videolar", href: "/blog" },
-  { name: "İletişim", href: "/blog" },
+  { id:1, name: "Haberler", href: "/blog" },
+  { id:2, name: "Etkinlikler", href: "/blog" },
+  { id:3, name: "Müzikler", href: "/blog" },
+  { id:4, name: "Videolar", href: "/blog" },
+  { id:5, name: "İletişim", href: "/blog" },
 ];
 
 export const FAVORITE_ITEMS: FavoriteItem[] = [

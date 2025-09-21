@@ -39,7 +39,7 @@ export function Header({
   }`}
 >
       <div className="flex items-center gap-3">
-        <h2 className={`${titleTextSize} font-extrabold ${textColor}`}>{title}</h2>
+        <h2 className={`${titleTextSize} font-sairaCondensed font-extrabold ${textColor}`}>{title}</h2>
         {icon && <FontAwesomeIcon icon={icon} className={`${iconColor}`} size="2xl" />}
       </div>
       <div className="flex items-center gap-4">

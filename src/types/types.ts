@@ -1,6 +1,7 @@
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 export interface MenuItem {
+  id:number;
   name: string;
   href: string;
 }
@@ -13,9 +14,12 @@ export interface SliderItem {
   description?: string;
   buttonText?: string;
   buttonLink?: string;
-  textColor?: string;
-
+  textColor?: {
+    mobile: string;
+    md: string;
+  };
 }
+
 
 export interface SocialLink {
   name: string;
