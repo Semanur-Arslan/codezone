@@ -3,13 +3,13 @@
 ## 1. Proje Hakkında
 
 **Kullanılan Ana Teknolojiler:**
-- Next.js (App Router)
+- Next.js
 - TypeScript
 - React
 - Tailwind CSS
-- Swiper.js (slider için)
-- FontAwesome (ikonlar için)
-- Axios (API istekleri için)
+- Swiper.js
+- FontAwesome
+- Axios
 
 ---
 
