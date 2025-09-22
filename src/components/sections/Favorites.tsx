@@ -18,14 +18,14 @@ export default function Favorites() {
         style={{ clipPath: 'polygon(0 0, 100% 0%, 90% 70%, 0% 100%)' }}>
         <div className="flex flex-col-2 items-center gap-4">
           <Image
-            src="/youtubeLogo.svg"
+            src="/socialMedia/youtubeLogo.svg"
             alt="YouTube Logo"
             width={32}
             height={32}
             className="rounded-md w-auto h-8 object-cover"
           />
           <Image
-            src="/spotifyLogo.svg"
+            src="/socialMedia/spotifyLogo.svg"
             alt="Spotify Logo"
             width={36}
             height={36}

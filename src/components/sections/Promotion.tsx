@@ -7,7 +7,7 @@ export default function Promotion() {
     <section className="relative w-full md:h-[500px] h:-[700px] overflow-hidden ">
       <div className="absolute inset-0 z-3">
         <Image
-          src="/sectionOneBg.png"
+          src="/promotion/promotionBg.png"
           alt="Arka Plan"
           fill
           className="object-cover object-end"
@@ -26,7 +26,7 @@ export default function Promotion() {
           <div className="transform -rotate-3 justify-center items-center flex flex-col h-full ">
             <div className="flex items-center justify-center md:gap-4 gap-2 mb-4 ">
               <Image
-                src="/twitch.svg"
+                src="/socialMedia/twitch.svg"
                 alt="Twitch"
                 width={200}
                 height={200}
@@ -60,14 +60,14 @@ export default function Promotion() {
         </div>
         <div className="relative flex justify-center gap-4 mt-6 md:mt-0  md:px-1 md:block">
           <Image
-            src="/sectionOne1.png"
+            src="/promotion/promotion1.png"
             alt="Sol"
             width={350}
             height={500}
             className="object-contain w-1/2 md:w-1/4 md:absolute md:left-0 md:bottom-0"
           />
           <Image
-            src="/sectionOne2.png"
+            src="/promotion/promotion2.png"
             alt="Sağ"
             width={250}
             height={400}
